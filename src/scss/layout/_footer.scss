@@ -1,8 +1,9 @@
 
 /** Footer **/
 .site-footer {
+    padding: calc($separacion /2 );
     background-color: $grisOscuro;
-    margin: 0;
+    margin-bottom: 0;
 }
 .contenedor-footer {
     padding: 3rem 0;
@@ -15,6 +16,13 @@
         }
     }
 }
+
+.navegacion {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+
 .site-footer nav {
     display: flex;
     flex-direction: column;
@@ -27,4 +35,9 @@
 .copyright {
     margin: 0;
     color: $blanco;
+
+    a {
+        color: #825ae0;
+        text-decoration:underline;
+    }
 }

@@ -12,8 +12,9 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <link rel="icon" href="/src/img/icono-casa.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -33,14 +34,14 @@
                 </div>
 
                 <div class="derecha">
-                    <img  class="dark-mode-boton" src="/build/img/dark-mode.svg">
+                    <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
                     <nav id="navegacion" class="navegacion">
                         <a href="/nosotros">Nosotros</a>
                         <a href="/anuncios">Anuncios</a>
                         <a href="/blog">Blog</a>
                         <a href="/contacto">Contacto</a>
                         <?php if($auth): ?>
-                            <a href="/cerrar-sesion"></a>
+                            <a href="/logout">Cerrar Sesión</a>
                         <?php endif; ?>
                     </nav>
                 </div>
@@ -54,11 +55,12 @@
 <footer class="site-footer seccion">
     <div class="contenedor contenedor-footer">
         <nav class="navegacion">
-            <a href="nosotros.php">Nosotros</a>
-            <a href="anuncios.php">Anuncios</a>
-            <a href="blog.php">Blog</a>
-            <a href="contacto.php">Contacto</a>
+            <a href="/nosotros">Nosotros</a>
+            <a href="/anuncios">Anuncios</a>
+            <a href="/blog">Blog</a>
+            <a href="/contacto">Contacto</a>
         </nav>
+        <p class="copyright">Sitio creado por <a target="blank" href="https://pablopereyradev.netlify.app/">Pablo Pereyra</a></p>
         <p class="copyright">Todos los Derechos Reservados <?php echo date('Y'); ?> &copy; </p>
     </div>
 </footer>
